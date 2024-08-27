@@ -1,0 +1,41 @@
+/******* custom font ******/
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Light.ttf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+$primary-color-darkGreen: rgba(6, 50, 20, 1);
+$secondery-color: rgba(146, 206, 79, 1);
+$btn-text-color: rgba(255, 255, 255, 1);
+$green-color: rgba(37, 165, 75, 1);
+$white-color: rgba(255, 255, 255, 1);

@@ -1,0 +1,50 @@
+body {
+  font-family: "CustomFont", sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color-darkGreen;
+}
+h1 {
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: -0.01em;
+  @include respond-to("small") {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}

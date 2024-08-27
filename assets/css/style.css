@@ -1,0 +1,198 @@
+/******* custom font ******/
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  /* SemiBold */
+  font-style: normal; }
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Light.ttf") format("truetype");
+  font-weight: 300;
+  /* Light */
+  font-style: normal; }
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/webfonts/Oakes Grotesk Medium.ttf") format("truetype");
+  font-weight: 500;
+  /* Medium */
+  font-style: normal; }
+
+body {
+  font-family: "CustomFont", sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px; }
+
+p {
+  margin: 0px;
+  padding: 0px; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #063214; }
+
+h1 {
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: -0.01em; }
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 28px;
+      line-height: 33.6px; } }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style-type: none;
+  text-transform: capitalize; }
+
+a {
+  text-decoration: none; }
+
+/*********
+display flex
+align center
+justify-content center
+***********/
+header .header-top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.hero-area .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.template-btn {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px 36px;
+  border-radius: 2px;
+  background-color: #063214;
+  color: white;
+  border: 2px solid #063214;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .template-btn:hover {
+    color: #063214;
+    background: transparent; }
+
+header .header-top {
+  background: #063214;
+  height: 48px; }
+  header .header-top .container {
+    height: 100%; }
+    header .header-top .container p {
+      color: white;
+      font-size: 16px; }
+
+header .nav-wrapper {
+  padding: 33px 0 33px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header .nav-wrapper nav ul li + li {
+    padding-left: 36px; }
+  header .nav-wrapper nav ul li a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #063214;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 500;
+    font-weight: bold; }
+    header .nav-wrapper nav ul li a:hover {
+      color: #25a54b; }
+  header .nav-wrapper .btn-wrapper {
+    margin-right: 80px; }
+  @media (max-width: 992px) {
+    header .nav-wrapper {
+      display: none; } }
+
+header .mobile-content-wrapper {
+  display: none; }
+  header .mobile-content-wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .mobile-content-wrapper ul li:first-child a {
+      color: #063214;
+      font-size: 20px; }
+    header .mobile-content-wrapper ul li:last-child a {
+      color: #063214;
+      font-size: 20px; }
+  @media (max-width: 992px) {
+    header .mobile-content-wrapper {
+      display: inline; } }
+
+/******Hero section start hare*******/
+.hero-area .wrapper .left .title-wrapper {
+  max-width: 583px;
+  text-align: center; }
+
+.hero-area .wrapper .right {
+  background: url(../images/hero-img.png); }
+  .hero-area .wrapper .right img {
+    max-width: 720px;
+    height: 444px; }

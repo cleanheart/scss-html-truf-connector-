@@ -1,0 +1,66 @@
+header .header-top {
+  background: $primary-color-darkGreen;
+  height: 48px;
+  .container {
+    height: 100%;
+    @extend %content-center;
+    p {
+      color: $white-color;
+      font-size: 16px;
+    }
+  }
+}
+header .nav-wrapper {
+  padding: 33px 0 33px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav ul li {
+    + li {
+      padding-left: 36px;
+    }
+    a {
+      font-size: 14px;
+      line-height: 14px;
+      color: $primary-color-darkGreen;
+      transition: 0.3s;
+      font-weight: 500;
+      font-weight: bold;
+      &:hover {
+        color: $green-color;
+      }
+    }
+  }
+  .btn-wrapper {
+    margin-right: 80px;
+  }
+  // Mixin use kore 992px nav and btn-wrapper hide kora
+  @include respond-to("large") {
+    display: none;
+  }
+}
+
+header .mobile-content-wrapper {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li:first-child {
+      a {
+        color: $primary-color-darkGreen;
+        font-size: 20px;
+      }
+    }
+    li:last-child {
+      a {
+        color: $primary-color-darkGreen;
+        font-size: 20px;
+      }
+    }
+  }
+  display: none;
+
+  @include respond-to("large") {
+    display: inline;
+  }
+}

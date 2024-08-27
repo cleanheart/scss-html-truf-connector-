@@ -1,0 +1,28 @@
+@import "base/variables";
+@import "base/mixin";
+@import "base/typography";
+@import "theme/theme-class";
+@import "components/buttons";
+@import "components/header";
+@import "components/footer";
+
+/******Hero section start hare*******/
+.hero-area{
+  .wrapper{
+    @extend %flex-between;
+    .left{
+      .title-wrapper{
+        max-width: 583px;
+        text-align: center;
+    }
+  }
+    .right{
+      background:url(../images/hero-img.png) ;
+      img{
+        max-width: 720px;
+        height: 444px;
+      }
+    }
+  }
+
+}
