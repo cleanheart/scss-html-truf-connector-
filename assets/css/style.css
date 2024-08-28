@@ -55,6 +55,13 @@ h5,
 h6 {
   color: #063214;
   margin: 0; }
+  h1 span,
+  h2 span,
+  h3 span,
+  h4 span,
+  h5 span,
+  h6 span {
+    color: #92ce4f; }
 
 h1 {
   font-size: 56px;
@@ -64,6 +71,25 @@ h1 {
     h1 {
       font-size: 28px;
       line-height: 33.6px; } }
+
+h2 {
+  font-size: 36px;
+  line-height: 39.6px;
+  letter-spacing: -0.01em; }
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 20px;
+      line-height: 26px; } }
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.02em; }
+  @media (max-width: 576px) {
+    h3 {
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: -0.01em; } }
 
 h6 {
   font-size: 20px;
@@ -102,7 +128,7 @@ display flex
 align center
 justify-content center
 ***********/
-header .header-top .container {
+header .header-top .container, .option-area .content-wrapper .inner-2 .btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +139,7 @@ header .header-top .container {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.hero-area .wrapper, .learn-area .content-wrapper, .learn-area .content-wrapper .text-content, .artificial-area .content-wrapper {
+.hero-area .wrapper, .learn-area .content-wrapper, .learn-area .content-wrapper .text-content, .artificial-area .content-wrapper, .option-area .content-wrapper, .option-area .content-wrapper .inner-2 .icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,19 +308,119 @@ header .mobile-content-wrapper {
 /******artificial area start hare*******/
 .artificial-area {
   padding: 96px 80px;
-  background: #063214; }
-  .artificial-area .content-wrapper .title-logo {
-    width: 50%; }
-    .artificial-area .content-wrapper .title-logo img {
-      width: 96px;
-      margin-bottom: 37px; }
-  .artificial-area .content-wrapper .des {
-    width: 50%; }
-    .artificial-area .content-wrapper .des h6 {
-      color: white;
-      max-width: 584px; }
-  @media (max-width: 576px) {
+  background: #063214;
+  position: relative; }
+  .artificial-area .area-shape {
+    position: absolute;
+    left: 20%;
+    bottom: 15px; }
+    @media (max-width: 992px) {
+      .artificial-area .area-shape {
+        left: 0;
+        bottom: 0; } }
+  .artificial-area .content-wrapper {
+    gap: 20px; }
+    .artificial-area .content-wrapper .title-logo {
+      width: 50%; }
+      .artificial-area .content-wrapper .title-logo img {
+        width: 96px;
+        margin-bottom: 37px; }
+      @media (max-width: 992px) {
+        .artificial-area .content-wrapper .title-logo {
+          width: 100%; } }
+    .artificial-area .content-wrapper .des {
+      width: 50%; }
+      .artificial-area .content-wrapper .des h6 {
+        color: white;
+        max-width: 584px; }
+      @media (max-width: 992px) {
+        .artificial-area .content-wrapper .des {
+          width: 100%;
+          padding-left: 77px; } }
+    @media (max-width: 992px) {
+      .artificial-area .content-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  @media (max-width: 992px) {
     .artificial-area {
       padding: 96px 20px; } }
 
 /******artificial area End hare*******/
+/******Option area start hare*******/
+.option-area .content-wrapper {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .option-area .content-wrapper .inner-1 {
+    max-width: 33.33%;
+    padding: 48px 89px 48px 48px; }
+    @media (max-width: 992px) {
+      .option-area .content-wrapper .inner-1 {
+        max-width: 50%; } }
+  .option-area .content-wrapper .inner-2 {
+    width: 33.33%;
+    padding: 48px 32px 32px 48px;
+    background: #e9f6ed;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer; }
+    .option-area .content-wrapper .inner-2 .btn-wrapper {
+      background: #92ce4f;
+      width: 88px;
+      height: 32px;
+      border-radius: 100px;
+      margin-bottom: 28px; }
+      .option-area .content-wrapper .inner-2 .btn-wrapper p {
+        font-size: 16px;
+        line-height: 16px;
+        color: white;
+        padding: 10px, 14px, 10px, 14px;
+        text-transform: capitalize; }
+    .option-area .content-wrapper .inner-2 .title-wrapper h2 {
+      margin-bottom: 20px; }
+    .option-area .content-wrapper .inner-2 .title-wrapper p {
+      width: 245px;
+      opacity: 60%; }
+    .option-area .content-wrapper .inner-2 .icon-wrapper {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: end; }
+      .option-area .content-wrapper .inner-2 .icon-wrapper .icon {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+        .option-area .content-wrapper .inner-2 .icon-wrapper .icon a {
+          font-size: 24px;
+          color: #063214; }
+      .option-area .content-wrapper .inner-2 .icon-wrapper img {
+        max-width: 180px;
+        opacity: 20%; }
+    @media (max-width: 992px) {
+      .option-area .content-wrapper .inner-2 {
+        width: 50%; } }
+  .option-area .content-wrapper .inner-2:hover {
+    overflow: hidden;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    border-radius: 10px; }
+  .option-area .content-wrapper .inner-bg {
+    background: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .option-area .content-wrapper .inner-bg:hover {
+      background: #e9f6ed; }
+
+/******Option area End hare*******/
