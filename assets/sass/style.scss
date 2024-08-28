@@ -7,22 +7,113 @@
 @import "components/footer";
 
 /******Hero section start hare*******/
-.hero-area{
-  .wrapper{
+.hero-area {
+  .wrapper {
     @extend %flex-between;
-    .left{
-      .title-wrapper{
-        max-width: 583px;
+    .left {
+      .title-wrapper {
+        max-width: 541px;
         text-align: center;
+
+        h1 {
+          margin-bottom: 48px !important;
+        }
+        @include respond-to('small'){
+          max-width: 271px;
+        }
+      }
+      @include respond-to('large'){
+        padding-top: 42px;
+      }
+    }
+    .right {
+      position: relative;
+      .img-1 {
+        position: absolute;
+        bottom: 0%;
+      }
+      @include respond-to('large'){
+        width: 100%;
+        padding-top: 16px;
+      }
+    }
+    @include respond-to('large'){
+      flex-direction: column-reverse;
     }
   }
-    .right{
-      background:url(../images/hero-img.png) ;
+}
+/******Hero section end hare*******/
+
+
+/******learn more are start hare*******/
+.learn-area{
+  padding: 96px 80px;
+  .content-wrapper{
+    @extend %flex-between ;
+    gap: 20px;
+    .text-content{
+      @extend %flex-between;
+      gap: 95px;
+      .h6-1{
+        max-width: 572px;
+        @include respond-to('large'){
+          max-width: 100%;
+        }
+      }
+      .h6-2{
+        max-width: 222px;
+        @include respond-to('large'){
+          max-width: 100%;
+        }
+      }
+      @include respond-to('large'){
+        flex-direction: column;
+        gap: 36px;
+      }
+    }
+    .btn-wrapper{
+      min-width: 165px;
+      @include respond-to('small'){
+        margin-right: auto;
+      }
+    }
+    @include respond-to('large'){
+      flex-direction: column;
+      gap: 64px;
+    }
+  }
+  @include respond-to('small'){
+    padding:42px 20px;
+  }
+}
+/******learn more are End hare*******/
+
+/******artificial area start hare*******/
+.artificial-area{
+  padding: 96px 80px;
+  background: $primary-color-darkGreen;
+  .content-wrapper{
+    @extend %flex-between;
+    .title-logo{
+      width: 50%;
       img{
-        max-width: 720px;
-        height: 444px;
+        width: 96px;
+        margin-bottom:37px;
+      }
+    }
+    .des{
+      width: 50%;
+      h6{
+        color: $white-color;
+        max-width: 584px;
       }
     }
   }
+  
+  @include respond-to('small'){
+    padding: 96px 20px;
 
+  }
 }
+/******artificial area End hare*******/
+

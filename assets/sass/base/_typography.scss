@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
   color: $primary-color-darkGreen;
+  margin: 0;
 }
 h1 {
   font-size: 56px;
@@ -29,6 +30,16 @@ h1 {
   @include respond-to("small") {
     font-size: 28px;
     line-height: 33.6px;
+  }
+}
+h6 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  @include respond-to("small") {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 .container {
@@ -47,4 +58,7 @@ li {
 }
 a {
   text-decoration: none;
+}
+img {
+  width: 100%;
 }
