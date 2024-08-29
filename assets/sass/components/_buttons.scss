@@ -13,4 +13,27 @@
     color: $primary-color-darkGreen;
     background: transparent;
   }
+  @include respond-to("medium") {
+    padding: 16px 20px;
+  }
+}
+.template-btn-2 {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px 36px;
+  border-radius: 2px;
+  text-transform: capitalize;
+  background-color: $white-color;
+  color: $primary-color-darkGreen;
+  border: 2px solid $primary-color-darkGreen;
+  transition: 0.3s;
+  z-index: 6;
+  &:hover {
+    color: $white-color;
+    background: transparent;
+    border: 2px solid $white-color;
+  }
+  @include respond-to("medium") {
+    padding: 16px 20px;
+  }
 }

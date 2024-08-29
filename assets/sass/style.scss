@@ -149,11 +149,13 @@
       @include respond-to('large'){
         max-width: 50%;
       }
+      @include respond-to('medium'){
+        padding: 20px 12px 28px 20px;
+      }
     }
     .inner-2{
       width: 33.33%;     
       padding: 48px 32px 32px 48px;
-      background:$box-bg;
       transition: 0.3s;
       overflow: hidden;
       cursor: pointer;
@@ -178,7 +180,10 @@
         }
         p{
           width: 245px;
-          opacity: 60%
+          opacity: 60%;
+          @include respond-to('medium'){
+            width:100%;
+          }
         }
       }
       .icon-wrapper{
@@ -194,31 +199,161 @@
         
         img{
           max-width: 180px;
-          opacity: 20%;
+
+          @include respond-to('medium'){
+            max-width:80px;
+          }
         }
       }
       @include respond-to('large'){
         width: 50%;
       }
-    }
-    .inner-2:hover {
-      overflow: hidden;
-      transform: scale(1.05); // 5% বড় হবে এবং 3 ডিগ্রী ঘুরবে
+      &:hover{
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
       background-color: lighten($box-bg, 10%);
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
       border-radius: 10px;
-    }
-    .inner-bg{
-      background: $white-color;
-      transition: 0.3s;
-      &:hover{
-        background:$box-bg ;
+      }
+      @include respond-to('medium'){
+        padding: 24px 30px 24px 24px;
       }
     }
-
+    .items-box {
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6) {
+        background: $box-bg;  // Default for larger screens
+      }
+    
+      @media (max-width: 992px) {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(6) {
+          background: $box-bg;  // When screen size is 992px or less
+        }
+    
+        &:nth-child(4),
+        &:nth-child(5) {
+          background: transparent;  // Others can be set to transparent if needed
+        }
+      }
+     
+    }
     
   }
 }
 /******Option area End hare*******/
+
+
+/******learn-more-2 area start hare*******/
+.learn-2{
+
+  padding-bottom: 67px;
+  background-color: $primary-color-darkGreen;
+  position: relative;
+  .learn-2-shape{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .content-wrapper{
+    @extend %flex-between;
+    position: relative;
+    .left{
+      padding-left: 80px;
+      padding-top: 98px;
+      z-index: 3;
+      .text{
+        max-width: 502px;
+        margin-bottom: 97px;
+        h6{
+          color: $white-color;
+          &:first-child{
+            margin-bottom: 48px;
+          }
+        }
+        @include respond-to('large'){
+          max-width: 100%;
+          display: flex;
+          justify-content: space-between;
+          gap: 16px;
+          margin-bottom: 64px;
+        }
+      }
+      
+      .template-btn{
+        background: $white-color;
+        color: $primary-color-darkGreen;
+        @include respond-to('madium'){
+          margin-left: auto;
+        }
+      }
+
+      @include respond-to ('large'){
+        padding: 18px 20px 18px 20px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+    .right{
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      .img-1{
+        @include respond-to('large'){
+          display: none;
+        }
+      }
+      .img-2{
+        width: 100%;
+        display: none;
+        @include respond-to('large'){
+          display: inline-block;
+        }
+      }
+      @include respond-to('large'){
+        position: static;
+        width: 100%;
+      }
+    }
+    @include respond-to('large'){
+      flex-direction: column-reverse;
+    }
+  }
+  @include respond-to('large'){
+    padding-bottom: 20px;
+  }
+}
+/******learn-more-2 area start hare*******/
+
+
+/******proparty area start hare*******/
+
+.prpparty-area{
+  .up-content{
+    @extend %flex-between;
+    .left{
+      width: 50%;
+      position: relative;
+      .shape{
+        position:absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 512px;
+      }
+    }
+    .right{
+      width: 50%
+    }
+  }
+  .down-content{
+    @extend %flex-between;
+  }
+}
+/******proparty area start hare*******/
 
