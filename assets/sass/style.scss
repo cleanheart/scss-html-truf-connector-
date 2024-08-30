@@ -345,11 +345,24 @@
         left: 0;
         bottom: 0;
         max-width: 512px;
+        max-height: 512px;
       }
     }
-    .right{
-      width: 50%
+    .right {
+      width: 50%;
+      padding: 64px;
+    
+      .title-wrapper {
+        max-width: 433px;
+        margin-bottom: 64px;
+      }
+      .description{
+        margin-bottom: 123px;
+      }
     }
+    
+    
+    
   }
   .down-content{
     @extend %flex-between;

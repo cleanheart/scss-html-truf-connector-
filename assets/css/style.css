@@ -157,8 +157,10 @@ header .header-top .container, .option-area .content-wrapper .inner-2 .btn-wrapp
 
 .template-btn {
   font-size: 16px;
+  display: inline-block;
   line-height: 16px;
   padding: 20px 36px;
+  font-weight: bold;
   border-radius: 2px;
   text-transform: capitalize;
   background-color: #063214;
@@ -169,7 +171,8 @@ header .header-top .container, .option-area .content-wrapper .inner-2 .btn-wrapp
   transition: 0.3s; }
   .template-btn:hover {
     color: #063214;
-    background: transparent; }
+    background: transparent;
+    font-weight: bold; }
   @media (max-width: 768px) {
     .template-btn {
       padding: 16px 20px; } }
@@ -543,9 +546,16 @@ header .mobile-content-wrapper {
     position: absolute;
     left: 0;
     bottom: 0;
-    max-width: 512px; }
+    max-width: 512px;
+    max-height: 512px; }
 
 .prpparty-area .up-content .right {
-  width: 50%; }
+  width: 50%;
+  padding: 64px; }
+  .prpparty-area .up-content .right .title-wrapper {
+    max-width: 433px;
+    margin-bottom: 64px; }
+  .prpparty-area .up-content .right .description {
+    margin-bottom: 123px; }
 
 /******proparty area start hare*******/
