@@ -1,0 +1,413 @@
+.installers-hero {
+  background: url("../../assets/images/installers-hero-bg.png");
+  background-size: cover;
+  padding: 190px 80px 84px 80px;
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      h1 {
+        color: $white-color;
+      }
+    }
+    .right {
+      margin-top: 114px;
+
+      .text {
+        max-width: 417px;
+        margin-bottom: 74px;
+        h5 {
+          color: $white-color;
+        }
+      }
+    }
+  }
+  @include respond-to("large") {
+    padding: 190px 80px 84px 80px;
+    .content-wrapper {
+      flex-direction: column;
+    }
+
+    .left {
+      max-width: 100%;
+    }
+
+    .right {
+      margin-left: 30%;
+    }
+  }
+  @include respond-to("small") {
+    padding: 100px 20px 46px 20px;
+    .content-wrapper {
+      flex-direction: column;
+    }
+
+    .left {
+      max-width: 100%;
+    }
+
+    .right {
+      margin-top: 56px !important;
+      margin-left: 30%;
+
+      .text {
+        margin-bottom: 44px !important;
+      }
+    }
+  }
+}
+
+/*********Proparty hero area ENd hare**********/
+
+/*********installers partners area End hare**********/
+.installers-partner {
+  padding: 96px 80px;
+  background: $primary-color-darkGreen;
+  position: relative;
+
+  .shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .title-wrapper {
+    h1 {
+      color: $white-color;
+    }
+  }
+
+  .inner-wrapper {
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 290px;
+
+    .inner {
+      max-width: 48%;
+      display: flex;
+      margin-bottom: 64px;
+
+      .icon-wrapper {
+        width: 64px;
+        height: 64px;
+        background: $green-color;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .right {
+        margin-left: 28px;
+
+        h6 {
+          color: $white-color;
+        }
+
+        p {
+          margin-top: 30px;
+          color: $white-color;
+          max-width: 330px;
+          opacity: 60%;
+        }
+      }
+    }
+    @include respond-to("xxlarge") {
+      padding-left: calc(290px - (1350px - 100vw));
+    }
+  }
+
+  @include respond-to("large") {
+    .inner-wrapper {
+      .inner {
+        max-width: 45%;
+      }
+    }
+  }
+  @include respond-to("medium") {
+    .inner-wrapper {
+      .inner {
+        max-width: 100%;
+      }
+    }
+  }
+  @include respond-to("small") {
+    padding: 64px 18px;
+
+    .inner-wrapper {
+      margin-top: 48px;
+      padding-left: 40px;
+
+      .inner {
+        margin-bottom: 24px;
+
+        .icon-wrapper {
+          width: 32px;
+          height: 32px;
+
+          svg {
+            width: 16px;
+          }
+        }
+        .right {
+          margin-left: 14px;
+
+          p {
+            margin-top: 24px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*********installers partners area End hare**********/
+
+/*********installers pricing area start hare**********/
+.installers-pricing {
+  padding: 96px 80px;
+  background: rgba(233, 246, 237, 1);
+
+  .title {
+    text-align: center;
+  }
+  .pricing-wrapper {
+    margin-top: 64px;
+    @extend %flex-between;
+    flex-wrap: wrap;
+
+    .inner {
+      width: 48%;
+      padding: 56px 46px;
+      background: $white-color;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+
+      .price {
+        span {
+          padding: 10px 14px;
+          background: $green-color;
+          color: $white-color;
+          border-radius: 100px;
+        }
+        h1 {
+          margin: 32px 0 24px 0;
+        }
+        p {
+          opacity: 60%;
+          color: $primary-color-darkGreen;
+        }
+      }
+      .btn-wrapper {
+        padding: 42px 0 48px 0;
+      }
+      .description {
+        opacity: 60%;
+      }
+
+      @include respond-to("large") {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      @include respond-to("small") {
+        padding: 32px 20px;
+
+        .price {
+          span {
+            font-size: 12px;
+          }
+          h1 {
+            margin: 20px 0 16px 0;
+          }
+        }
+        .btn-wrapper {
+          padding: 32px 0 32px 0;
+          button {
+            font-size: 14px;
+          }
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .pricing-wrapper-2 {
+    margin-top: 20px;
+    padding: 56px 46px;
+    background: $white-color;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      .price {
+        span {
+          padding: 10px 14px;
+          background: $green-color;
+          color: $white-color;
+          border-radius: 100px;
+        }
+
+        .count {
+          padding: 32px 0px 24px 0;
+          display: flex;
+          gap: 8px;
+          p {
+            opacity: 60%;
+            align-self: flex-end;
+          }
+        }
+        h6 {
+          color: $lemon-green !important;
+        }
+      }
+      .text {
+        max-width: 560px;
+
+        p {
+          span {
+            color: $lemon-green;
+          }
+        }
+      }
+    }
+    .btn-wrapper {
+      padding: 42px 0 48px 0;
+    }
+    .list {
+      @extend %flex-between;
+      flex-wrap: wrap;
+
+      .left {
+        width: 45%;
+        ul {
+          flex-direction: column;
+          gap: 30px;
+          li {
+            color: rgba($primary-color-darkGreen, 0.6);
+            position: relative;
+
+            &::after {
+              width: 21px;
+              height: 21px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: "FontAwesome";
+              position: absolute;
+              right: 0px;
+              top: 0px;
+              font-size: 16px;
+              content: "\f00c";
+              color: $white-color;
+              background: $lemon-green;
+              border-radius: 50%;
+              @include respond-to("small") {
+                width: 15px;
+                height: 15px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include respond-to("large") {
+      .top {
+        flex-direction: column;
+        justify-content: left;
+        .price {
+          width: 100%;
+        }
+        .text {
+          max-width: 100%;
+        }
+      }
+      .list {
+        flex-direction: column;
+        gap: 25px;
+        .left {
+          width: 100%;
+        }
+      }
+    }
+    @include respond-to("small") {
+      padding: 32px 20px;
+
+      .top {
+        .price {
+          span {
+            font-size: 12px;
+          }
+          .count {
+            padding: 20px 0px 18px 0 !important;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        .text {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .btn-wrapper {
+        padding: 32px 0 37px 0;
+      }
+      .list {
+        .left {
+          ul {
+            gap: 25px;
+            li {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to("small") {
+    padding: 64px 20px;
+  }
+}
+
+/*********installers pricing area end hare**********/
+
+/*********installers weather area end hare**********/
+
+.installers-weather {
+  padding: 124px 0;
+  color: $white-color;
+  .content-wrapper {
+    margin: 0 auto;
+    max-width: 795px;
+    text-align: center;
+
+    .btn-wrapper {
+      padding-top: 64px;
+    }
+  }
+
+  @include respond-to("small") {
+    padding: 64px 20px;
+
+    .content-wrapper {
+      .btn-wrapper {
+        padding-top: 48px;
+      }
+    }
+  }
+}
+
+/*********installers weather area end hare**********/

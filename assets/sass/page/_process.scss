@@ -1,0 +1,523 @@
+.process-hero {
+  background: url("../../assets/images/process-hero-bg.png");
+  background-size: cover;
+  padding: 190px 80px 64px 80px;
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      h1 {
+        color: $white-color;
+      }
+    }
+    .right {
+      margin-top: 114px;
+
+      .text {
+        max-width: 417px;
+        h5 {
+          color: $white-color;
+        }
+      }
+    }
+  }
+  @include respond-to("large") {
+    padding: 190px 80px 84px 80px;
+    .content-wrapper {
+      flex-direction: column;
+    }
+
+    .left {
+      max-width: 100%;
+    }
+
+    .right {
+      margin-left: 30%;
+    }
+  }
+  @include respond-to("small") {
+    padding: 100px 20px 46px 20px;
+    .content-wrapper {
+      flex-direction: column;
+    }
+
+    .left {
+      max-width: 100%;
+    }
+
+    .right {
+      margin-top: 56px !important;
+      margin-left: 30%;
+    }
+  }
+}
+
+/*********Process hero area ENd hare**********/
+
+/********* process step area start hare**********/
+.process-step {
+  padding: 96px 80px;
+
+  .box-wrapper {
+    margin-top: 64px;
+    @extend %flex-between;
+    flex-wrap: wrap;
+
+    .inner {
+      margin-bottom: 34px;
+      min-height: 423px;
+      border-radius: 12px;
+      width: 33%;
+      padding: 32px;
+      border: 2px solid rgba(37, 165, 75, 1);
+
+      .count {
+        padding: 10px 14px;
+        background: $green-color;
+        color: $white-color;
+        border-radius: 100px;
+      }
+
+      .title {
+        margin: 32px 0 28px 0;
+      }
+
+      .description {
+        p {
+          opacity: 60%;
+        }
+      }
+      @include respond-to("xlarge") {
+        width: 49%;
+      }
+      @include respond-to("large") {
+        width: 100%;
+        margin-bottom: 32px;
+      }
+      @include respond-to("medium") {
+        padding: 28px;
+      }
+    }
+    .toggle-inner {
+      .toggle-section {
+        margin-top: 36px;
+
+        .btn-wrapper {
+          display: flex;
+
+          .toggle-button {
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: $green-color;
+            background: transparent;
+
+            @include respond-to("small") {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .toggle-content {
+          margin-top: 32px;
+          padding-left: 32px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s ease-out;
+          transform-origin: top;
+
+          ul {
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+              color: rgba($primary-color-darkGreen, 0.6);
+              position: relative;
+
+              &::before {
+                font-family: "FontAwesome";
+                position: absolute;
+                font-size: 15px;
+                content: "\f00c";
+                left: -30px;
+                top: 0%;
+                color: $green-color;
+              }
+              @include respond-to("small") {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to("small") {
+      margin-top: 36px;
+
+      .inner {
+        min-height: 222px;
+        .title {
+          margin: 18px 0 24px 0;
+        }
+        .description {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to("medium") {
+    padding: 64px 20px;
+  }
+}
+/********* process step area end hare**********/
+
+/********* Process types area start hare**********/
+.process-types {
+  padding: 96px 80px;
+  background: $primary-color-darkGreen;
+  position: relative;
+
+  .shape {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .title-wrapper {
+    display: flex;
+    h1 {
+      color: $white-color !important;
+    }
+    p {
+      align-content: end;
+      margin-left: 15%;
+      color: $white-color !important;
+      max-width: 256px;
+    }
+  }
+  .box-wrapper {
+    padding-top: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .inner {
+      padding: 48px;
+      border: 3px solid $lemon-green;
+      width: 30%;
+      border-radius: 16px;
+
+      h4 {
+        color: $white-color;
+        margin-bottom: 26px;
+      }
+      p {
+        color: $white-color;
+      }
+    }
+  }
+
+  @include respond-to("large") {
+    .title-wrapper {
+      flex-direction: column;
+      p {
+        margin-left: 0px;
+        margin-top: 48px;
+      }
+    }
+    .box-wrapper {
+      padding-top: 48px;
+      flex-wrap: wrap;
+
+      .inner {
+        width: 100%;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  @include respond-to("small") {
+    padding: 64px 20px;
+  }
+}
+/********* Process types area end hare**********/
+
+/*******process invesment area end hare**********/
+.process-invesment {
+  .container {
+    padding: 0px;
+  }
+  background: $box-bg;
+  .content-wrapper {
+    display: flex;
+    .left {
+      padding: 96px 30px 64px 80px;
+      width: 50%;
+      .title {
+        max-width: 440px;
+        margin-bottom: 64px;
+      }
+      .description {
+        max-width: 310px;
+      }
+    }
+    .right {
+      border-left: 1px solid rgba(37, 165, 75, 1);
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      .inner {
+        border-top: 1px solid rgba(37, 165, 75, 1);
+        padding: 96px 80px 96px 100px;
+
+        .icon-wrapper {
+          width: 77px;
+          height: 77px;
+          background: $green-color;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          color: $white-color;
+        }
+        .title {
+          margin: 46px 0 36px 0;
+        }
+      }
+    }
+    @include respond-to("large") {
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        .title {
+          max-width: 100%;
+        }
+        .description {
+          max-width: 100%;
+        }
+      }
+      .right {
+        width: 100%;
+      }
+    }
+    @include respond-to("medium") {
+      .left {
+        padding: 64px 30px 60px 20px;
+        .title {
+          margin-bottom: 34px;
+        }
+      }
+      .right {
+        .inner {
+          padding: 60px 20px;
+
+          .icon-wrapper {
+            width: 52px;
+            height: 52px;
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .title {
+            margin: 32px 0 28px 0;
+            h4 {
+              font-size: 20px;
+            }
+          }
+          .description {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*******process invesment area end hare**********/
+
+/*******process quality area start hare**********/
+.process-quality {
+  .container {
+    padding: 0px;
+
+    .content-wrapper {
+      display: flex;
+
+      .left {
+        width: 50%;
+        position: relative;
+
+        .shape {
+          position: absolute;
+          width: inherit;
+          height: 75%;
+          left: -30px;
+          bottom: 36px;
+        }
+      }
+      .right {
+        padding-left: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title {
+          max-width: 550px;
+          p {
+            color: $primary-color-darkGreen;
+            opacity: 60%;
+            max-width: 445px;
+            margin-top: 64px;
+          }
+        }
+      }
+      @include respond-to("large") {
+        flex-direction: column;
+
+        .left {
+          width: 100%;
+
+          .shape {
+            max-width: 50%;
+          }
+        }
+        .right {
+          padding: 60px 28px 56px 20px;
+          width: 100%;
+
+          .title {
+            max-width: 100%;
+            p {
+              max-width: 100%;
+              margin-top: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*******process quality area end hare**********/
+
+/*******process truf area start hare**********/
+.process-truf {
+  padding: 96px 0 48px 0;
+  background: $green-color;
+
+  .title {
+    padding-bottom: 96px;
+    h1 {
+      color: $white-color;
+      span {
+        color: $primary-color-darkGreen;
+      }
+    }
+  }
+  .box-wrapper {
+    display: flex;
+
+    .inner {
+      border: 1px solid $primary-color-darkGreen;
+      min-height: 397px;
+      width: 25%;
+      padding: 48px 43px 48px 48px;
+
+      .icon-wrapper {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
+        background: $primary-color-darkGreen;
+      }
+      .titlle {
+        margin: 76px 0 28px 0;
+        h4 {
+          color: $white-color !important;
+        }
+      }
+      .description {
+        p {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .last-text {
+    padding: 54px 20px 0 90px;
+    p {
+      color: $white-color;
+      position: relative;
+
+      &::before {
+        font-family: "FontAwesome";
+        position: absolute;
+        left: -25px;
+        top: 0;
+        font-size: 15px;
+        content: "\f00c";
+        color: $primary-color-darkGreen;
+      }
+    }
+  }
+  @include respond-to("large") {
+    padding: 64px 0 60px 0;
+
+    .title {
+      padding-bottom: 36px;
+    }
+
+    .box-wrapper {
+      flex-wrap: wrap;
+
+      .inner {
+        width: 50%;
+        min-height: 334px;
+        padding: 32px 10px 42px 20px;
+      }
+    }
+  }
+  @include respond-to("small") {
+    .box-wrapper {
+      .inner {
+        .icon-wrapper {
+          width: 54px;
+          height: 54px;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .titlle {
+          h4 {
+            font-size: 20px;
+          }
+        }
+        .description {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .last-text {
+      padding: 54px 20px 0 40px;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*******process truf area start hare**********/

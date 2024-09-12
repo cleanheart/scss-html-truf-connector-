@@ -1,0 +1,209 @@
+.proparty-hero {
+  background: url("../../assets/images/proparty-hero-cover.webp");
+  background-size: cover;
+  padding: 190px 80px 84px 80px;
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      h1 {
+        color: $white-color;
+      }
+    }
+    .right {
+      margin-top: 114px;
+
+      .text {
+        max-width: 417px;
+        margin-bottom: 74px;
+        h5 {
+          color: $white-color;
+        }
+      }
+    }
+  }
+  @include respond-to("large") {
+    padding: 190px 80px 84px 80px;
+    .content-wrapper {
+      flex-direction: column;
+    }
+
+    .left {
+      max-width: 270px;
+    }
+
+    .right {
+      margin-left: 30%;
+    }
+  }
+  @include respond-to("small") {
+    padding: 100px 20px 46px 20px;
+    .content-wrapper {
+      flex-direction: column;
+    }
+
+    .left {
+      max-width: 170px;
+    }
+
+    .right {
+      margin-top: 56px !important;
+      margin-left: 30%;
+
+      .text {
+        margin-bottom: 44px !important;
+      }
+    }
+  }
+}
+
+/*********Proparty hero area ENd hare**********/
+
+.proparty-choose {
+  background: $primary-color-darkGreen;
+
+  .title-wrapper {
+    border-bottom: 1px solid $white-color;
+    padding: 96px 0 64px 80px;
+
+    h1 {
+      color: $white-color;
+    }
+    @include respond-to("small") {
+      padding: 64px 0 36px 18px;
+    }
+  }
+
+  .inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: $primary-color-darkGreen;
+      width: 25%;
+      height: 422px;
+      padding: 48px;
+      border: 1px solid $white-color;
+      transition: 0.3s;
+      position: relative;
+      cursor: pointer;
+
+      .icon-wrapper {
+        max-width: 114px;
+        min-height: 114px;
+        background: $white-color;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 1;
+        transition: 0.3s;
+      }
+      .title {
+        // padding-top: 150px;
+        h4 {
+          color: $white-color;
+        }
+      }
+      .description {
+        display: none;
+        transition: 0.3s;
+        p {
+          color: $white-color !important;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover {
+        background: $green-color;
+
+        .description {
+          display: inline-block;
+        }
+      }
+
+      @include respond-to("xlarge") {
+        width: 50%;
+      }
+      @include respond-to("medium") {
+        width: 50%;
+        padding: 20px;
+      }
+      @include respond-to("small") {
+        height: 215px;
+
+        .icon-wrapper {
+          max-width: 57px;
+          min-height: 57px;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .description {
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .inner-2 {
+      position: relative;
+      justify-content: space-around;
+      background: $green-color;
+
+      .icon-wrapper {
+        position: absolute;
+        left: 0px;
+        max-width: 100%;
+        min-height: 100%;
+        background: transparent;
+        img {
+          opacity: 16%;
+        }
+
+        @include respond-to("small") {
+          width: 96px;
+          height: 121px;
+        }
+      }
+      .description {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/*********Proparty choose area end hare**********/
+
+/*********Proparty proparty area start hare**********/
+
+.prparty-contact {
+  padding: 120px 0px;
+  text-align: center;
+
+  .title {
+    margin: 0 auto;
+    max-width: 750px;
+  }
+  .description {
+    margin: 0 auto;
+    padding: 42px 0px 64px 0px;
+    max-width: 530px;
+  }
+
+  @include respond-to("small") {
+    padding: 64px 18px;
+
+    .description {
+      padding: 36px 0px 48px 0px;
+    }
+  }
+}
+
+/*********Proparty proparty area end hare**********/

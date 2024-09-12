@@ -1,0 +1,213 @@
+.about-hero-area {
+  .title-wrapper {
+    padding: 37px 0 64px 0;
+    h1 {
+      &:first-child {
+        margin-left: 15%;
+      }
+      &:nth-child(2) {
+        margin-left: 25%;
+        color: $green-color;
+      }
+      &:last-child {
+        margin-left: 80px;
+      }
+    }
+    @include respond-to("small") {
+      padding: 37px 0 28px 0;
+    }
+  }
+
+  .hero-content {
+    padding: 0 103px 96px 80px;
+    @extend %flex-between;
+    justify-content: flex-start;
+    gap: 64px;
+
+    .left-inner {
+      max-width: 55%;
+    }
+    .right-inner {
+      max-width: 40%;
+      h6 {
+        max-width: 416px;
+        @include respond-to("xlarge") {
+          max-width: 100%;
+        }
+      }
+    }
+    @include respond-to("xlarge") {
+      padding: 0 30px 96px 30px;
+    }
+    @include respond-to("large") {
+      padding: 0 28px 64px 28px;
+      flex-direction: column;
+      .left-inner,
+      .right-inner {
+        max-width: 100%;
+      }
+    }
+    @include respond-to("large") {
+      gap: 28px;
+    }
+  }
+}
+
+/*******Hero section end hare*********/
+
+/*******serve section start hare*********/
+.serve-area {
+  padding: 96px 80px;
+  background: $primary-color-darkGreen;
+  position: relative;
+  .shape {
+    position: absolute;
+    bottom: 0px;
+    right: 6%;
+    left: 6%;
+    @include respond-to("large") {
+      right: 0;
+      left: 0;
+    }
+  }
+  h1 {
+    color: $white-color;
+    span {
+      color: $green-color;
+    }
+  }
+  .box-wrapper {
+    padding: 64px 0px;
+    gap: 24px;
+    color: $white-color;
+    @extend %flex-between;
+    .inner {
+      padding: 48px;
+      width: 50%;
+      align-items: center;
+      display: flex;
+      gap: 48px;
+      border: 3px solid $green-color;
+      border-radius: 16px;
+      .text {
+        max-width: 250px;
+      }
+    }
+    @include respond-to("medium") {
+      gap: 12px;
+      flex-direction: column;
+      padding: 32px 0px 48px 0;
+      .inner {
+        width: 100%;
+        gap: 23px;
+        .text {
+          max-width: 100%;
+        }
+      }
+    }
+
+    @include respond-to("small") {
+      .inner {
+        padding: 33px 17px 33px 33px;
+        font-size: 12px;
+      }
+    }
+  }
+  .description {
+    color: $white-color;
+    max-width: 500px;
+  }
+  @include respond-to("large") {
+    padding: 64px 20px;
+  }
+}
+
+/*******serve section end hare*********/
+
+/*******education section start hare*********/
+.aducation-area {
+  padding: 120px 80px;
+  .title-wrapper {
+    max-width: 420px;
+    padding-bottom: 64px;
+  }
+  .main-content {
+    background: $box-bg;
+    display: flex;
+    align-items: center;
+    .left {
+      width: 57%;
+      position: relative;
+      .shape {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: $green-color;
+        width: 109px;
+        height: 109px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include respond-to("small") {
+          display: none;
+        }
+      }
+    }
+    .right {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 43%;
+      p {
+        color: $primary-color-darkGreen;
+        max-width: 382px;
+        &:first-child {
+          margin-bottom: 24px;
+          @include respond-to("xlarge") {
+            margin-bottom: 0px;
+          }
+        }
+        span {
+          color: $green-color;
+        }
+      }
+    }
+    @include respond-to("large") {
+      flex-direction: column;
+      .left {
+        width: 100%;
+      }
+      .right {
+        padding: 28px;
+        width: 100%;
+        p {
+          max-width: 100%;
+          + p {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+  .main-content-2 {
+    flex-direction: row-reverse;
+    margin-top: 64px;
+  }
+  @include respond-to("small") {
+    padding: 64px 20px;
+
+    .title-wrapper {
+      max-width: 220px;
+      padding-bottom: 48px;
+    }
+    .main-content {
+      .right {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+/*******education section End hare*********/

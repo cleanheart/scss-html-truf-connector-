@@ -1,5 +1,8 @@
 /******Hero section start hare*******/
 .hero-area {
+  .container {
+    padding: 0px;
+  }
   .wrapper {
     @extend %flex-between;
     .left {
@@ -49,6 +52,7 @@
       .h6-1 {
         max-width: 572px;
         @include respond-to("large") {
+          text-align: justify;
           max-width: 100%;
         }
       }
@@ -115,6 +119,7 @@
       }
       @include respond-to("large") {
         width: 100%;
+        text-align: justify;
         padding-left: 77px;
       }
     }
@@ -214,19 +219,19 @@
       &:nth-child(2),
       &:nth-child(4),
       &:nth-child(6) {
-        background: $box-bg; // Default for larger screens
+        background: $box-bg;
       }
 
       @media (max-width: 992px) {
         &:nth-child(2),
         &:nth-child(3),
         &:nth-child(6) {
-          background: $box-bg; // When screen size is 992px or less
+          background: $box-bg;
         }
 
         &:nth-child(4),
         &:nth-child(5) {
-          background: transparent; // Others can be set to transparent if needed
+          background: transparent;
         }
       }
     }
@@ -364,6 +369,9 @@
           margin-bottom: 36px;
         }
       }
+      .description {
+        opacity: 60%;
+      }
       .btn-wrapper {
         margin-top: 50px;
         @include respond-to("xlarge") {
@@ -402,6 +410,7 @@
       width: 50%;
       .descriptrion {
         p {
+          opacity: 60%;
           font-size: 16px;
           line-height: 24px;
           font-weight: 500;
@@ -446,7 +455,7 @@
             + li {
               margin-top: 18px;
             }
-            @include respond-to('small'){
+            @include respond-to("small") {
               font-size: 14px;
               line-height: 19.6px;
             }

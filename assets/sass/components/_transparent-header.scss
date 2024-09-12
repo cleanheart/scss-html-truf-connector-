@@ -1,0 +1,32 @@
+.transparent-header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  nav {
+    ul {
+      li {
+        a {
+          color: $white-color !important;
+          transition: 0.3s;
+
+          &:hover {
+            color: $lemon-green !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-content-wrapper {
+  ul {
+    li {
+      a {
+        color: $white-color !important;
+      }
+    }
+  }
+}

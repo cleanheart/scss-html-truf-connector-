@@ -34,7 +34,7 @@ header .nav-wrapper {
   .btn-wrapper {
     margin-right: 80px;
   }
-  // Mixin use kore 992px nav and btn-wrapper hide kora
+
   @include respond-to("large") {
     display: none;
   }
@@ -61,6 +61,7 @@ header .mobile-content-wrapper {
   display: none;
 
   @include respond-to("large") {
-    display: inline;
+    display: block;
+    padding-top: 15px;
   }
 }
