@@ -247,6 +247,12 @@ header .header-top {
     header .header-top .container p {
       color: white;
       font-size: 16px; }
+      @media (max-width: 768px) {
+        header .header-top .container p {
+          font-size: 12px; } }
+  @media (max-width: 576px) {
+    header .header-top {
+      height: 38px; } }
 
 header .nav-wrapper {
   padding: 33px 0 33px 0;
@@ -284,9 +290,6 @@ header .mobile-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -296,6 +299,42 @@ header .mobile-content-wrapper {
     header .mobile-content-wrapper ul li:last-child a {
       color: #063214;
       font-size: 20px; }
+  header .mobile-content-wrapper .menu {
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out; }
+    header .mobile-content-wrapper .menu ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      header .mobile-content-wrapper .menu ul li {
+        padding-left: 6%; }
+        header .mobile-content-wrapper .menu ul li a {
+          width: 100%;
+          display: inline-block;
+          font-size: 15px;
+          font-weight: 600;
+          color: #063214;
+          padding: 10px 15px;
+          text-decoration: none;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 4px; }
+          header .mobile-content-wrapper .menu ul li a:hover {
+            -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            color: #25a54b; }
+    header .mobile-content-wrapper .menu.active {
+      max-height: 300px; }
   @media (max-width: 992px) {
     header .mobile-content-wrapper {
       display: block;
@@ -315,9 +354,10 @@ header .mobile-content-wrapper {
     transition: 0.3s; }
     .transparent-header nav ul li a:hover {
       color: #92ce4f !important; }
-
-.mobile-content-wrapper ul li a {
-  color: white !important; }
+  .transparent-header .transparent-mobile-content-wrapper ul li a {
+    color: white !important; }
+  .transparent-header .transparent-mobile-content-wrapper .menu {
+    background: #063214; }
 
 .footer-area {
   background: #063214;

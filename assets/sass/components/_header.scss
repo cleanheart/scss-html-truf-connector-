@@ -7,7 +7,15 @@ header .header-top {
     p {
       color: $white-color;
       font-size: 16px;
+
+      @include respond-to("medium") {
+        font-size: 12px;
+      }
     }
+  }
+
+  @include respond-to("small") {
+    height: 38px;
   }
 }
 header .nav-wrapper {
@@ -43,7 +51,7 @@ header .nav-wrapper {
 header .mobile-content-wrapper {
   ul {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     li:first-child {
       a {
@@ -58,6 +66,44 @@ header .mobile-content-wrapper {
       }
     }
   }
+
+  .menu {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; // smooth transition for height change
+
+    ul {
+      flex-direction: column;
+
+      li {
+        padding-left: 6%;
+        a {
+          width: 100%;
+          display: inline-block;
+          font-size: 15px;
+          font-weight: 600;
+          color: $primary-color-darkGreen;
+          padding: 10px 15px;
+          text-decoration: none;
+          transition: 0.3s ease-in-out;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adds shadow around the link
+          border-radius: 4px;
+          &:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            color: $green-color; // Optional color change on hover
+          }
+        }
+      }
+    }
+
+    &.active {
+      
+      max-height: 300px; // set max height for the expanded menu
+    }
+  }
+
   display: none;
 
   @include respond-to("large") {
@@ -65,3 +111,71 @@ header .mobile-content-wrapper {
     padding-top: 15px;
   }
 }
+
+// header .mobile-content-wrapper {
+//   display: none;
+
+//   ul {
+//     display: flex;
+//     justify-content: space-between;
+//     li:first-child {
+//       a {
+//         color: $primary-color-darkGreen;
+//         font-size: 20px;
+//       }
+//     }
+//     li:last-child {
+//       a {
+//         color: $primary-color-darkGreen;
+//         font-size: 20px;
+//       }
+//     }
+//   }
+
+//   .menu {
+//     display: none;
+//     background-color: $white-color;
+//     width: 100%;
+//     position: absolute;
+//     top: 100%; /* Ensure the menu is placed right below the nav */
+//     left: 0;
+//     z-index: 999;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+//     ul {
+//       display: flex;
+//       flex-direction: column;
+//       margin: 0;
+//       padding: 20px;
+//       list-style: none;
+
+//       li {
+//         padding-left: 10%;
+//         margin-bottom: 15px;
+
+//         a {
+//           display: inline-block;
+//           font-size: 16px;
+//           font-weight: 600;
+//           color: $primary-color-darkGreen;
+//           padding: 10px 15px;
+//           text-decoration: none;
+//           transition: color 0.3s;
+//           &:hover {
+//             color: $green-color;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   @include respond-to("large") {
+//     display: block;
+//     padding-top: 15px;
+//   }
+// }
+
+// /* Show mobile menu on toggle */
+// .menu.active {
+//   display: block;
+// }

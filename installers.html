@@ -42,10 +42,10 @@
       </div>
       <!--Mobile menu-->
       <div class="container">
-        <div class="mobile-content-wrapper">
+        <div class="mobile-content-wrapper transparent-mobile-content-wrapper">
           <ul>
             <li>
-              <a href="#">
+              <a class="mobile-menu-toggle" href="#">
                 <i class="fa-solid fa-bars"></i>
               </a>
             </li>
@@ -60,6 +60,15 @@
               </a>
             </li>
           </ul>
+          <div class="menu mobile-menu">
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="about-us.html">about us</a></li>
+              <li><a href="proparty.html">property owner</a></li>
+              <!-- <li><a href="installers.html">installers</a></li> -->
+              <li><a href="process.html">our process</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -71,8 +80,10 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="left">
-            
-            <h1> Increase revenue with  <br> <span>quality leads</span> </h1>
+            <h1>
+              Increase revenue with <br />
+              <span>quality leads</span>
+            </h1>
           </div>
           <div class="right">
             <div class="text">
@@ -94,103 +105,188 @@
     </section>
     <!--Proparty hero area ENd hare-->
 
+    <!--installers partners area start hare-->
 
-     <!--installers partners area start hare-->
-
-     <section class="installers-partner">
+    <section class="installers-partner">
       <div class="shape">
-        <img src="assets/images/installers-parner-shape.png" alt="">
+        <img src="assets/images/installers-parner-shape.png" alt="" />
       </div>
-       <div class="container">
-         <div class="content-wrapper">
-           <div class="title-wrapper">
-            <h1>Why partner <br> <span>with us?</span> </h1>
-           </div>
-           <div class="inner-wrapper">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="title-wrapper">
+            <h1>
+              Why partner <br />
+              <span>with us?</span>
+            </h1>
+          </div>
+          <div class="inner-wrapper">
             <div class="inner">
               <div class="left">
                 <div class="icon-wrapper">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <g clip-path="url(#clip0_170_103)">
-                    <path d="M21.625 11.75C21.625 8.64844 19.1016 6.125 16 6.125C12.8984 6.125 10.375 8.64844 10.375 11.75C10.375 14.8696 12.9014 17.4375 16 17.4375C19.0969 17.4375 21.625 14.8718 21.625 11.75ZM16 15.5625C13.9321 15.5625 12.25 13.8523 12.25 11.75C12.25 9.68213 13.9321 8 16 8C18.0679 8 19.75 9.68213 19.75 11.75C19.75 13.8523 18.0679 15.5625 16 15.5625Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    <path d="M9.4375 14.5625C9.4375 12.4946 7.75537 10.8125 5.6875 10.8125C3.61963 10.8125 1.9375 12.4946 1.9375 14.5625C1.9375 16.6184 3.59912 18.375 5.6875 18.375C7.77661 18.375 9.4375 16.6179 9.4375 14.5625ZM5.6875 16.5C4.67114 16.5 3.8125 15.6128 3.8125 14.5625C3.8125 13.5286 4.65356 12.6875 5.6875 12.6875C6.72144 12.6875 7.5625 13.5286 7.5625 14.5625C7.5625 15.6128 6.70386 16.5 5.6875 16.5Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    <path d="M30.0625 14.5625C30.0625 12.4946 28.3804 10.8125 26.3125 10.8125C24.2446 10.8125 22.5625 12.4946 22.5625 14.5625C22.5625 16.6184 24.2241 18.375 26.3125 18.375C28.4016 18.375 30.0625 16.6179 30.0625 14.5625ZM26.3125 16.5C25.2961 16.5 24.4375 15.6128 24.4375 14.5625C24.4375 13.5286 25.2786 12.6875 26.3125 12.6875C27.3464 12.6875 28.1875 13.5286 28.1875 14.5625C28.1875 15.6128 27.3289 16.5 26.3125 16.5Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    <path d="M26.3125 18.375C24.7393 18.375 23.2556 19.0369 22.2041 20.1592C20.6523 18.4788 18.4326 17.4375 16 17.4375C13.5674 17.4375 11.3477 18.4788 9.7959 20.1592C8.74438 19.0369 7.2605 18.375 5.6875 18.375C2.56738 18.375 0 20.9019 0 24V25.875H32V24C32 20.9031 29.4333 18.375 26.3125 18.375ZM16 19.3125C18.939 19.3125 21.4785 21.2651 22.291 24H9.70898C10.5215 21.2651 13.061 19.3125 16 19.3125ZM5.6875 20.25C6.85791 20.25 7.95435 20.7998 8.65918 21.7129C8.25903 22.4163 7.95703 23.1846 7.77197 24H1.875C1.875 21.9321 3.58521 20.25 5.6875 20.25ZM24.228 24C24.043 23.1846 23.741 22.4163 23.3408 21.7129C24.0457 20.7998 25.1421 20.25 26.3125 20.25C28.4148 20.25 30.125 21.9321 30.125 24H24.228Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
+                      <path
+                        d="M21.625 11.75C21.625 8.64844 19.1016 6.125 16 6.125C12.8984 6.125 10.375 8.64844 10.375 11.75C10.375 14.8696 12.9014 17.4375 16 17.4375C19.0969 17.4375 21.625 14.8718 21.625 11.75ZM16 15.5625C13.9321 15.5625 12.25 13.8523 12.25 11.75C12.25 9.68213 13.9321 8 16 8C18.0679 8 19.75 9.68213 19.75 11.75C19.75 13.8523 18.0679 15.5625 16 15.5625Z"
+                        fill="white"
+                        stroke="#25A54B"
+                        stroke-width="0.2"
+                      />
+                      <path
+                        d="M9.4375 14.5625C9.4375 12.4946 7.75537 10.8125 5.6875 10.8125C3.61963 10.8125 1.9375 12.4946 1.9375 14.5625C1.9375 16.6184 3.59912 18.375 5.6875 18.375C7.77661 18.375 9.4375 16.6179 9.4375 14.5625ZM5.6875 16.5C4.67114 16.5 3.8125 15.6128 3.8125 14.5625C3.8125 13.5286 4.65356 12.6875 5.6875 12.6875C6.72144 12.6875 7.5625 13.5286 7.5625 14.5625C7.5625 15.6128 6.70386 16.5 5.6875 16.5Z"
+                        fill="white"
+                        stroke="#25A54B"
+                        stroke-width="0.2"
+                      />
+                      <path
+                        d="M30.0625 14.5625C30.0625 12.4946 28.3804 10.8125 26.3125 10.8125C24.2446 10.8125 22.5625 12.4946 22.5625 14.5625C22.5625 16.6184 24.2241 18.375 26.3125 18.375C28.4016 18.375 30.0625 16.6179 30.0625 14.5625ZM26.3125 16.5C25.2961 16.5 24.4375 15.6128 24.4375 14.5625C24.4375 13.5286 25.2786 12.6875 26.3125 12.6875C27.3464 12.6875 28.1875 13.5286 28.1875 14.5625C28.1875 15.6128 27.3289 16.5 26.3125 16.5Z"
+                        fill="white"
+                        stroke="#25A54B"
+                        stroke-width="0.2"
+                      />
+                      <path
+                        d="M26.3125 18.375C24.7393 18.375 23.2556 19.0369 22.2041 20.1592C20.6523 18.4788 18.4326 17.4375 16 17.4375C13.5674 17.4375 11.3477 18.4788 9.7959 20.1592C8.74438 19.0369 7.2605 18.375 5.6875 18.375C2.56738 18.375 0 20.9019 0 24V25.875H32V24C32 20.9031 29.4333 18.375 26.3125 18.375ZM16 19.3125C18.939 19.3125 21.4785 21.2651 22.291 24H9.70898C10.5215 21.2651 13.061 19.3125 16 19.3125ZM5.6875 20.25C6.85791 20.25 7.95435 20.7998 8.65918 21.7129C8.25903 22.4163 7.95703 23.1846 7.77197 24H1.875C1.875 21.9321 3.58521 20.25 5.6875 20.25ZM24.228 24C24.043 23.1846 23.741 22.4163 23.3408 21.7129C24.0457 20.7998 25.1421 20.25 26.3125 20.25C28.4148 20.25 30.125 21.9321 30.125 24H24.228Z"
+                        fill="white"
+                        stroke="#25A54B"
+                        stroke-width="0.2"
+                      />
                     </g>
                     <defs>
-                    <clipPath id="clip0_170_103">
-                    <rect width="32" height="32" fill="white"/>
-                    </clipPath>
+                      <clipPath id="clip0_170_103">
+                        <rect width="32" height="32" fill="white" />
+                      </clipPath>
                     </defs>
-                    </svg>
-                    
+                  </svg>
                 </div>
               </div>
               <div class="right">
                 <h6>Qualified Leads</h6>
-                <p>Gain access to homeowners who understand the value of professional turf installation and come prepared to discuss their needs.</p>
+                <p>
+                  Gain access to homeowners who understand the value of
+                  professional turf installation and come prepared to discuss
+                  their needs.
+                </p>
               </div>
             </div>
             <div class="inner">
               <div class="left">
                 <div class="icon-wrapper">
-                  <svg width="13" height="3" viewBox="0 0 13 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.0005 0.854004H0.734375V2.43833H12.0005V0.854004Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    </svg>
+                  <svg
+                    width="13"
+                    height="3"
+                    viewBox="0 0 13 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.0005 0.854004H0.734375V2.43833H12.0005V0.854004Z"
+                      fill="white"
+                      stroke="#25A54B"
+                      stroke-width="0.2"
+                    />
+                  </svg>
                 </div>
               </div>
               <div class="right">
                 <h6>Certification and Standards</h6>
-                <p>Gain access to homeowners who understand the value of professional turf installation and come prepared to discuss their needs.</p>
+                <p>
+                  Gain access to homeowners who understand the value of
+                  professional turf installation and come prepared to discuss
+                  their needs.
+                </p>
               </div>
             </div>
             <div class="inner">
               <div class="left">
                 <div class="icon-wrapper">
-                  <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.0549 11.0548C23.0549 4.95918 18.0957 0 12.0001 0C5.9045 0 0.945312 4.95918 0.945312 11.0548C0.945312 14.4334 2.46937 17.4623 4.86546 19.4917V32L12.0001 28.8307L19.1348 32V19.4917C21.5309 17.4622 23.0549 14.4334 23.0549 11.0548ZM2.82185 11.0548C2.82185 5.99391 6.93922 1.87654 12.0001 1.87654C17.061 1.87654 21.1784 5.99391 21.1784 11.0548C21.1784 16.1157 17.061 20.2331 12.0001 20.2331C6.93922 20.2331 2.82185 16.1157 2.82185 11.0548ZM6.74199 20.7771C8.04662 21.4855 9.50913 21.9383 11.0618 22.0694V27.1941L6.74199 29.113V20.7771ZM17.2582 29.113L12.9383 27.1941V22.0694C14.491 21.9383 15.9535 21.4855 17.2582 20.777V29.113Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    <path d="M7.88747 16.5069L12.0001 14.6926L16.1129 16.5069L15.6582 12.0348L18.6547 8.68407L14.2609 7.73454L12.0001 3.84937L9.7393 7.73461L5.3457 8.68413L8.34203 12.0349L7.88747 16.5069ZM10.9449 9.3939L12.0001 7.58042L13.0554 9.3939L15.1061 9.83708L13.7075 11.401L13.9198 13.4884L12.0002 12.6416L10.0806 13.4884L10.2929 11.401L8.89429 9.83708L10.9449 9.3939Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    </svg>
-                    
+                  <svg
+                    width="24"
+                    height="32"
+                    viewBox="0 0 24 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.0549 11.0548C23.0549 4.95918 18.0957 0 12.0001 0C5.9045 0 0.945312 4.95918 0.945312 11.0548C0.945312 14.4334 2.46937 17.4623 4.86546 19.4917V32L12.0001 28.8307L19.1348 32V19.4917C21.5309 17.4622 23.0549 14.4334 23.0549 11.0548ZM2.82185 11.0548C2.82185 5.99391 6.93922 1.87654 12.0001 1.87654C17.061 1.87654 21.1784 5.99391 21.1784 11.0548C21.1784 16.1157 17.061 20.2331 12.0001 20.2331C6.93922 20.2331 2.82185 16.1157 2.82185 11.0548ZM6.74199 20.7771C8.04662 21.4855 9.50913 21.9383 11.0618 22.0694V27.1941L6.74199 29.113V20.7771ZM17.2582 29.113L12.9383 27.1941V22.0694C14.491 21.9383 15.9535 21.4855 17.2582 20.777V29.113Z"
+                      fill="white"
+                      stroke="#25A54B"
+                      stroke-width="0.2"
+                    />
+                    <path
+                      d="M7.88747 16.5069L12.0001 14.6926L16.1129 16.5069L15.6582 12.0348L18.6547 8.68407L14.2609 7.73454L12.0001 3.84937L9.7393 7.73461L5.3457 8.68413L8.34203 12.0349L7.88747 16.5069ZM10.9449 9.3939L12.0001 7.58042L13.0554 9.3939L15.1061 9.83708L13.7075 11.401L13.9198 13.4884L12.0002 12.6416L10.0806 13.4884L10.2929 11.401L8.89429 9.83708L10.9449 9.3939Z"
+                      fill="white"
+                      stroke="#25A54B"
+                      stroke-width="0.2"
+                    />
+                  </svg>
                 </div>
               </div>
               <div class="right">
                 <h6>Reputation Building</h6>
-                <p>Gain access to homeowners who understand the value of professional turf installation and come prepared to discuss their needs.</p>
+                <p>
+                  Gain access to homeowners who understand the value of
+                  professional turf installation and come prepared to discuss
+                  their needs.
+                </p>
               </div>
             </div>
             <div class="inner">
               <div class="left">
                 <div class="icon-wrapper">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30.0621 16.3276C28.9619 15.2274 27.1716 15.2274 26.0714 16.3276L22.2875 20.1114H21.3698C20.9826 19.0138 19.9349 18.225 18.7065 18.225L8.22695 18.2255L1.11133 25.3413L7.77008 31.9999L12.1286 27.6414L22.7422 27.6414L30.0627 20.3183C31.1626 19.2181 31.1623 17.4279 30.0621 16.3276ZM3.76302 25.3413L5.09652 24.0078L9.10358 28.0148L7.77008 29.3483L3.76302 25.3413ZM28.7366 18.9928L21.9654 25.7664L11.352 25.7664L10.4295 26.689L6.42239 22.6819L9.00377 20.1006L18.7066 20.1001C19.2293 20.1001 19.6546 20.5254 19.6546 21.0481C19.6546 21.5708 19.2293 21.996 18.7066 21.996H13.1025V23.871H18.7066C19.9344 23.871 20.9816 23.0832 21.3693 21.9865H23.0643L27.3973 17.6535C27.7666 17.2843 28.3673 17.2844 28.7364 17.6535C29.1056 18.0227 29.1057 18.6236 28.7366 18.9928Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    <path d="M25.7093 5.943C25.7093 2.666 23.0433 0 19.7663 0C18.3841 0 17.0554 0.482437 16.0002 1.34744C14.945 0.482437 13.6163 0 12.234 0C8.95702 0 6.29102 2.666 6.29102 5.943C6.35139 10.2512 10.8768 13.9015 16.0001 17.0745C20.0653 14.4383 25.4802 11.0207 25.7093 5.943ZM23.8343 5.943C23.8343 8.5255 21.1993 11.5236 16.0002 14.8586C10.8011 11.5236 8.16608 8.5255 8.16608 5.943C8.16608 3.69987 9.99095 1.875 12.2341 1.875C13.809 1.83156 15.0851 2.86169 16.0002 4.07094C16.9163 2.93019 18.003 1.86094 19.7663 1.875C22.0095 1.875 23.8343 3.69987 23.8343 5.943Z" fill="white" stroke="#25A54B" stroke-width="0.2"/>
-                    </svg>
-                    
+                  <svg
+                    width="31"
+                    height="32"
+                    viewBox="0 0 31 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M30.0621 16.3276C28.9619 15.2274 27.1716 15.2274 26.0714 16.3276L22.2875 20.1114H21.3698C20.9826 19.0138 19.9349 18.225 18.7065 18.225L8.22695 18.2255L1.11133 25.3413L7.77008 31.9999L12.1286 27.6414L22.7422 27.6414L30.0627 20.3183C31.1626 19.2181 31.1623 17.4279 30.0621 16.3276ZM3.76302 25.3413L5.09652 24.0078L9.10358 28.0148L7.77008 29.3483L3.76302 25.3413ZM28.7366 18.9928L21.9654 25.7664L11.352 25.7664L10.4295 26.689L6.42239 22.6819L9.00377 20.1006L18.7066 20.1001C19.2293 20.1001 19.6546 20.5254 19.6546 21.0481C19.6546 21.5708 19.2293 21.996 18.7066 21.996H13.1025V23.871H18.7066C19.9344 23.871 20.9816 23.0832 21.3693 21.9865H23.0643L27.3973 17.6535C27.7666 17.2843 28.3673 17.2844 28.7364 17.6535C29.1056 18.0227 29.1057 18.6236 28.7366 18.9928Z"
+                      fill="white"
+                      stroke="#25A54B"
+                      stroke-width="0.2"
+                    />
+                    <path
+                      d="M25.7093 5.943C25.7093 2.666 23.0433 0 19.7663 0C18.3841 0 17.0554 0.482437 16.0002 1.34744C14.945 0.482437 13.6163 0 12.234 0C8.95702 0 6.29102 2.666 6.29102 5.943C6.35139 10.2512 10.8768 13.9015 16.0001 17.0745C20.0653 14.4383 25.4802 11.0207 25.7093 5.943ZM23.8343 5.943C23.8343 8.5255 21.1993 11.5236 16.0002 14.8586C10.8011 11.5236 8.16608 8.5255 8.16608 5.943C8.16608 3.69987 9.99095 1.875 12.2341 1.875C13.809 1.83156 15.0851 2.86169 16.0002 4.07094C16.9163 2.93019 18.003 1.86094 19.7663 1.875C22.0095 1.875 23.8343 3.69987 23.8343 5.943Z"
+                      fill="white"
+                      stroke="#25A54B"
+                      stroke-width="0.2"
+                    />
+                  </svg>
                 </div>
               </div>
               <div class="right">
                 <h6>Resource Support</h6>
-                <p>Gain access to homeowners who understand the value of professional turf installation and come prepared to discuss their needs.</p>
+                <p>
+                  Gain access to homeowners who understand the value of
+                  professional turf installation and come prepared to discuss
+                  their needs.
+                </p>
               </div>
             </div>
-           </div>
-         </div>
-       </div>
-     </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--installers partners area End hare-->
 
-     <!--installers partners area End hare-->
-
-
-     <!--installers pricing area start hare-->
-     <section class="installers-pricing">
-       <div class="container">
-         <div class="content-wrapper">
-           <div class="title">
-            <h1>Transparent  <span>Pricing</span> for <br> your needs</h1>
-           </div>
-           <div class="pricing-wrapper">
+    <!--installers pricing area start hare-->
+    <section class="installers-pricing">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="title">
+            <h1>
+              Transparent <span>Pricing</span> for <br />
+              your needs
+            </h1>
+          </div>
+          <div class="pricing-wrapper">
             <div class="inner">
               <div class="price">
                 <span>Live leads</span>
@@ -201,7 +297,12 @@
                 <button class="btn-3">Get started now</button>
               </div>
               <div class="description">
-                <p>Pay $25 per live lead that is originated through Turf Connector’s client base. These are commercial and residential property owners interested in scheduling a call/visit for an estimate and get their turf plans off the ground.</p>
+                <p>
+                  Pay $25 per live lead that is originated through Turf
+                  Connector’s client base. These are commercial and residential
+                  property owners interested in scheduling a call/visit for an
+                  estimate and get their turf plans off the ground.
+                </p>
               </div>
             </div>
             <div class="inner">
@@ -214,11 +315,16 @@
                 <button class="btn-3">Get started now</button>
               </div>
               <div class="description">
-                <p>Pay $25 per live lead that is originated through Turf Connector’s client base. These are commercial and residential property owners interested in scheduling a call/visit for an estimate and get their turf plans off the ground.</p>
+                <p>
+                  Pay $25 per live lead that is originated through Turf
+                  Connector’s client base. These are commercial and residential
+                  property owners interested in scheduling a call/visit for an
+                  estimate and get their turf plans off the ground.
+                </p>
               </div>
             </div>
-           </div>
-           <div class="pricing-wrapper-2">
+          </div>
+          <div class="pricing-wrapper-2">
             <div class="top">
               <div class="price">
                 <span>Full service</span>
@@ -229,7 +335,11 @@
                 <h6>$5000 Qurterly</h6>
               </div>
               <div class="text">
-                <p>Turf Connector Ad Agency will be your <span>full time, dedicated social media arm.</span>  Our team is your team. This service includes:</p>
+                <p>
+                  Turf Connector Ad Agency will be your
+                  <span>full time, dedicated social media arm.</span> Our team
+                  is your team. This service includes:
+                </p>
               </div>
             </div>
             <div class="btn-wrapper">
@@ -246,7 +356,9 @@
                   <li>Hashtag Research</li>
                   <li>Unlimited Revisions</li>
                   <li>DM & Comment Response Management</li>
-                  <li>Instagram Growth Automation (150+ Followers Per Month)</li>
+                  <li>
+                    Instagram Growth Automation (150+ Followers Per Month)
+                  </li>
                   <li>Weekly Facebook Boost Recommendations</li>
                 </ul>
               </div>
@@ -259,37 +371,39 @@
                   <li>Hashtag Research</li>
                   <li>Unlimited Revisions</li>
                   <li>DM & Comment Response Management</li>
-                  <li>Instagram Growth Automation (150+ Followers Per Month)</li>
+                  <li>
+                    Instagram Growth Automation (150+ Followers Per Month)
+                  </li>
                   <li>Weekly Facebook Boost Recommendations</li>
                 </ul>
               </div>
-              
             </div>
-           </div>
-         </div>
-       </div>
-     </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <!--installers pricing area end hare-->
+    <!--installers pricing area end hare-->
 
-
-
-     <!--installers weather area start hare-->
-     <section class="installers-weather">
-       <div class="container">
-         <div class="content-wrapper">
-           <h3>Whether you are a seasoned installer looking to <span>expand your reach</span>  or an aspiring entrepreneur <span>ready to make your mark</span>  in the turf industry, we provide the tools, connections, and support to help you succeed.</h3>
-           <div class="btn-wrapper">
+    <!--installers weather area start hare-->
+    <section class="installers-weather">
+      <div class="container">
+        <div class="content-wrapper">
+          <h3>
+            Whether you are a seasoned installer looking to
+            <span>expand your reach</span> or an aspiring entrepreneur
+            <span>ready to make your mark</span> in the turf industry, we
+            provide the tools, connections, and support to help you succeed.
+          </h3>
+          <div class="btn-wrapper">
             <a class="template-btn" href="#">Get connected</a>
           </div>
-          </div>
-       </div>
-     </section>
-     <!--installers weather area end hare-->
+        </div>
+      </div>
+    </section>
+    <!--installers weather area end hare-->
 
-
-
-     <!--Footer area start hare-->
+    <!--Footer area start hare-->
     <section class="footer-area">
       <div class="shape">
         <img src="assets/images/footer-shape.png" alt="" />

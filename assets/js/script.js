@@ -1,9 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const firstSection = document.querySelector(
-    ".toggle-section .toggle-content"
-  );
-  firstSection.style.maxHeight = firstSection.scrollHeight + "px";
+//mobile menu
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileMenu = document.querySelector('.menu');
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+
+  // Open/close mobile menu on click
+  mobileMenuToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+    // Toggle active class
+    if (mobileMenu.classList.contains('active')) {
+      mobileMenu.classList.remove('active');
+      mobileMenu.style.maxHeight = '0'; // hide menu with animation
+    } else {
+      mobileMenu.classList.add('active');
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px'; // set max height for smooth expand
+    }
+  });
 });
+
+
+//other section
 
 document.querySelectorAll(".toggle-button").forEach((button) => {
   button.addEventListener("click", function () {

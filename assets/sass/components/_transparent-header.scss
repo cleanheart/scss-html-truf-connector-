@@ -19,14 +19,16 @@
       }
     }
   }
-}
-
-.mobile-content-wrapper {
-  ul {
-    li {
-      a {
-        color: $white-color !important;
+  .transparent-mobile-content-wrapper {
+    ul {
+      li {
+        a {
+          color: $white-color !important;
+        }
       }
+    }
+    .menu {
+      background: $primary-color-darkGreen;
     }
   }
 }
