@@ -519,7 +519,7 @@ header .mobile-content-wrapper {
     margin-bottom: 48px !important; }
   @media (max-width: 576px) {
     .hero-area .wrapper .left .title-wrapper {
-      max-width: 271px; } }
+      max-width: 280px; } }
 
 @media (max-width: 992px) {
   .hero-area .wrapper .left {

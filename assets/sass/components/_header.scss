@@ -72,7 +72,7 @@ header .mobile-content-wrapper {
     display: block;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out; // smooth transition for height change
+    transition: max-height 0.5s ease-in-out; 
 
     ul {
       flex-direction: column;
@@ -88,11 +88,11 @@ header .mobile-content-wrapper {
           padding: 10px 15px;
           text-decoration: none;
           transition: 0.3s ease-in-out;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adds shadow around the link
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           border-radius: 4px;
           &:hover {
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-            color: $green-color; // Optional color change on hover
+            color: $green-color; 
           }
         }
       }

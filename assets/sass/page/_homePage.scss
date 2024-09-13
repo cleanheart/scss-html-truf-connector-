@@ -14,7 +14,7 @@
           margin-bottom: 48px !important;
         }
         @include respond-to("small") {
-          max-width: 271px;
+          max-width: 280px;
         }
       }
       @include respond-to("large") {

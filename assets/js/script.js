@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//other section
 
+//other section
 document.querySelectorAll(".toggle-button").forEach((button) => {
   button.addEventListener("click", function () {
     const toggleSection = this.closest(".toggle-section");
