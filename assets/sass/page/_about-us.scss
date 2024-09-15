@@ -193,7 +193,12 @@
   .main-content-2 {
     flex-direction: row-reverse;
     margin-top: 64px;
+
+    @include respond-to("large") {
+      flex-direction: column;
+    }
   }
+
   @include respond-to("small") {
     padding: 64px 20px;
 

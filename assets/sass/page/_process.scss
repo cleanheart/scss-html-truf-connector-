@@ -151,6 +151,9 @@
             }
           }
         }
+        &.expanded .toggle-content {
+          // This will be dynamically updated
+        }
       }
     }
 
